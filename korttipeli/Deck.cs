@@ -10,6 +10,7 @@ namespace korttipeli
     {
         // properties
         public List<Card> Cards = new List<Card>();
+        public static Random r = new Random();
 
         // methods
         public void fillDeck() // generate all cards
@@ -45,7 +46,19 @@ namespace korttipeli
             Cards.RemoveAt(indexOfThefirstCardOfDeck);
 
             return temp;
+        } // drawCard() päättyy
+
+        public void Shuffle()
+        {   // 1, 2, 3, 4, 5
+            for (int n = Cards.Count - 1; n > 0; --n)
+            {
+                int k = r.Next(n + 1); // 0 - missä kortissa ollaan menossa
+                Card temp = Cards[n];
+                Cards[n] = Cards[k];
+                Cards[k] = temp;
+            }
         }
+
 
     }
 }

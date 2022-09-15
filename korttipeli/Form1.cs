@@ -25,7 +25,7 @@ namespace korttipeli
 
             // Player player1 = new Player();
             deck.fillDeck();
-
+            deck.Shuffle();
             //playerCards.Cards.Add(deck.drawCard());
         }
 
@@ -52,6 +52,12 @@ namespace korttipeli
             }
 
         }
+        // lisätään uudet luokat "Table" ja "Player".
+        // "Table"-luokalla on property "Player", joka on lista pelaajia.
+        // Kun luodaan "Table"-luokasta luodaan objekti, sille annetaan
+        //      parametrinä listan pelaajia, jotka tallennetaan objektiin.
+        // "Table"-luokalla on metodi "RemovePlayer", joka poistaa
+        // "Table"-objektin listasta indeksin perusteella pelaajan.
 
     }
 }
