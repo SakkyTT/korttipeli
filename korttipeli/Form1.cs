@@ -1,9 +1,11 @@
-﻿using System;
+﻿using korttipeli.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,35 +31,45 @@ namespace korttipeli
             //playerCards.Cards.Add(deck.drawCard());
         }
 
+        // nostaa kortin ja käynnistää käyttöliittymän päivityksen
         private void button1_Click(object sender, EventArgs e)
         {
+            Card temp = deck.drawCard();
+            playerCards.Cards.Add(temp);
+            // lisätään uusi label talteen
+            addLabel(temp, playerCards.Cards.Count);          
+            updateScene(); // update UI
+        }
+
+        // Suorittaa kaikki käyttöliittymän päivitykset
+        private void updateScene()
+        {
             int countCards = 0;
-            const int spacing = 25;
+            
 
-            playerCards.Cards.Add(deck.drawCard());
-
-            foreach (Card c in playerCards.Cards)
-            {
-                Label temp = new Label(); // luodaan label objekti
-                //temp.Location = new Point(12, 13); // objektin sijainti
-                                                   // objektin arvo
-                temp.Text = c.Value.ToString();
-                temp.Size = new Size(19,15);
-                // siirrytään oikealla
-                // mones kortti menossa + minkä verran siirretään
-                temp.Location = new Point(12+(countCards*spacing), 13);
-                // lisätään tämän (this) formin "Controls"
-                this.Controls.Add(temp);
-                countCards++;
-            }
+            pictureBox1.Image = korttipeli.CardPictures.ResourceManager.GetObject("C1") as Bitmap;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.Size = new Size(100, 200);
 
         }
-        // lisätään uudet luokat "Table" ja "Player".
-        // "Table"-luokalla on property "Player", joka on lista pelaajia.
-        // Kun luodaan "Table"-luokasta luodaan objekti, sille annetaan
-        //      parametrinä listan pelaajia, jotka tallennetaan objektiin.
-        // "Table"-luokalla on metodi "RemovePlayer", joka poistaa
-        // "Table"-objektin listasta indeksin perusteella pelaajan.
+
+        private void addLabel(Card c, int countCards)
+        {
+            const int spacing = 25;
+
+            Label temp = new Label(); // luodaan label objekti
+                                      //temp.Location = new Point(12, 13); // objektin sijainti
+                                      // objektin arvo
+            temp.Text = c.Value.ToString();
+            temp.Size = new Size(19, 15);
+            // siirrytään oikealla
+            // mones kortti menossa + minkä verran siirretään
+            temp.Location = new Point(12 + (countCards * spacing), 13);
+            // lisätään tämän (this) formin "Controls"
+            this.Controls.Add(temp);
+
+            playerCards.Labels.Add(temp);
+        }
 
     }
 }

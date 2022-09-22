@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace korttipeli
 {
@@ -10,6 +11,7 @@ namespace korttipeli
     {
         // properties
         public List<Card> Cards = new List<Card>();
+        public List<Label> Labels = new List<Label>();
         public static Random r = new Random();
 
         // methods
