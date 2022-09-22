@@ -37,8 +37,16 @@ namespace korttipeli
             Card temp = deck.drawCard();
             playerCards.Cards.Add(temp);
             // lisätään uusi label talteen
-            addLabel(temp, playerCards.Cards.Count);          
+            addLabel(temp, playerCards.Cards.Count);
+            addPictureBox(temp, playerCards.Cards.Count);
             updateScene(); // update UI
+        }
+
+        private void addPictureBox(Card tempCard, int count)
+        {
+            PictureBox tempPB = new PictureBox();
+            string key = tempCard.GetPictureKey(); // maa + arvo = "D7"
+            tempPB.Image = Card.GetPictureResourceX(key); // BitMap, kuvasta
         }
 
         // Suorittaa kaikki käyttöliittymän päivitykset
@@ -47,9 +55,9 @@ namespace korttipeli
             int countCards = 0;
             
 
-            pictureBox1.Image = korttipeli.CardPictures.ResourceManager.GetObject("C1") as Bitmap;
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.Size = new Size(100, 200);
+            //pictureBox1.Image = korttipeli.CardPictures.ResourceManager.GetObject("C1") as Bitmap;
+           // pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+           // pictureBox1.Size = new Size(100, 200);
 
         }
 
@@ -71,5 +79,12 @@ namespace korttipeli
             playerCards.Labels.Add(temp);
         }
 
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    foreach(Label l in playerCards.Labels)
+        //    {
+        //        this.Controls.Remove(l);
+        //    }
+        //}
     }
 }
