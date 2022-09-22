@@ -53,18 +53,54 @@ namespace korttipeli
 
         public static Image GetPictureResourceX(string key)
         {
-            
+            return korttipeli.CardPictures.ResourceManager.GetObject(key) as Image;
         }
 
         private char getSuiteId()
         {
             char returnValue = ' ';
 
-
+            switch (Suite.ToString())
+            {
+                // Suite[0]
+                case "Hearts":
+                    returnValue = 'H';
+                    break;
+                case "Diamonds":
+                    returnValue = 'D';
+                    break;
+                case "Clubs":
+                    returnValue = 'C';
+                    break;
+                case "Spades":
+                    returnValue = 'S';
+                    break;
+            }
 
             return returnValue;
         }
 
+        private string getValueId() { // "1"-"10" / "J" "Q" "K"
+            string returnValue = "";
+
+            switch (Value)
+            {
+                case 11:
+                    returnValue = "J";
+                    break;
+                case 12:
+                    returnValue = "Q";
+                    break;
+                case 13:
+                    returnValue = "K";
+                    break;
+                default:
+                    returnValue = Value.ToString(); // "1" - "10"
+                    break;
+            }
+
+            return returnValue;
+        }
 
     }
 }

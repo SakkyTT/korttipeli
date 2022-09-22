@@ -93,7 +93,160 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\C1.png" />
+    <None Include="Resources\c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

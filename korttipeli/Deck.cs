@@ -12,6 +12,7 @@ namespace korttipeli
         // properties
         public List<Card> Cards = new List<Card>();
         public List<Label> Labels = new List<Label>();
+        public List<PictureBox> PictureBoxes = new List<PictureBox>();
         public static Random r = new Random();
 
         // methods

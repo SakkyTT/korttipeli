@@ -44,9 +44,19 @@ namespace korttipeli
 
         private void addPictureBox(Card tempCard, int count)
         {
+            const int spacing = 120;
+
             PictureBox tempPB = new PictureBox();
             string key = tempCard.GetPictureKey(); // maa + arvo = "D7"
             tempPB.Image = Card.GetPictureResourceX(key); // BitMap, kuvasta
+            // sijainti, koko, kuvatyylikoko
+            tempPB.Location = new Point(12 + (count-1)*spacing, 13);
+            tempPB.Size = new Size(100, 200);
+            tempPB.SizeMode = PictureBoxSizeMode.Zoom;
+
+            this.Controls.Add(tempPB);
+
+            playerCards.PictureBoxes.Add(tempPB);
         }
 
         // Suorittaa kaikki käyttöliittymän päivitykset
